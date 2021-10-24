@@ -1,2 +1,4 @@
-# girhub-packages-python
-Pushing a Python package to the GH package repo
+# Python Packaging Test
+
+A sample repo for testing how to install a Python package from source from a GH repo.
+
