@@ -2,7 +2,7 @@
 
 A working example on how to install a Python package from its source stored in a github repo.
 
-## How to Install This Package
+## How to Install This Package From Source
 
 The URL format is:
 
@@ -21,6 +21,8 @@ The URL should be wrapped with quotes to escape the `&`. So we get:
 ```bash
 pip install "git+https://git@github.com/adamatan/github-packages-python.git#subdirectory=packaging_tutorial&egg=example-pkg-adamatan"
 ```
+
+## How to Install This Package From Wheel
 
 
 ## Troubleshooting
