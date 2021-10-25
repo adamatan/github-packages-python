@@ -11,8 +11,8 @@ protocol://REPO-URL#egg=<package_name>&subdirectory=<repo_subdirectory>
 ```
 
 For example,let's take
-1. Protocol: `git+https`
-1. URL: `git@github.com:adamatan/github-packages-python.git`. We will replace `:adamatan` with `/adamatan`.
+1. Protocol: `git+https`, which works with any public repo.
+1. URL: `git@github.com:adamatan/github-packages-python.git`. We have to replace `:adamatan` with `/adamatan` to adhere to the `pip` URL convention which is a bit different than Github's.
 1. The package name is defined in [`setup.cfg`](./packaging_tutorial/setup.cfg) to be `example-pkg-adamatan`.
 1. The package subdirectory is `packaging_tutorial`.
 
