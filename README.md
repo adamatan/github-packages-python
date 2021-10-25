@@ -1,10 +1,8 @@
-# Python Packaging Test
+# Installing a Python Package From Its Github Source
 
-A sample repo for testing how to install a Python package from source from a GH repo.
+A sample repo for testing how to install a Python package from its source stored in a github repo.
 
 ## How to Install This Package
-
-The full pip reference page about VCS support [is available here](https://pip.pypa.io/en/stable/topics/vcs-support/).
 
 The URL format is:
 
@@ -24,8 +22,13 @@ The URL should be wrapped with quotes to escape the `&`. So we get:
 pip install "git+https://git@github.com/adamatan/github-packages-python.git#subdirectory=packaging_tutorial&egg=example-pkg-adamatan"
 ```
 
+
 ## Troubleshooting
 I've tested this with Python 3.9. You can use `make docker` to test the installation on a clean environment.
+
+## Further Reading
+The full pip reference page about VCS support [is available here](https://pip.pypa.io/en/stable/topics/vcs-support/).
+
 
 ## How to get the repo URL?
 Hit `Code` above and choose ssh or HTTPS.
