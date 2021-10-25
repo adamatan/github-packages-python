@@ -1,6 +1,6 @@
 # Installing a Python Package From Its Github Source
 
-A sample repo for testing how to install a Python package from its source stored in a github repo.
+A sample repo examplifying how to install a Python package from its source stored in a github repo.
 
 ## How to Install This Package
 
