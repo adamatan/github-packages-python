@@ -9,15 +9,25 @@ The full pip reference page about VCS support [is available here](https://pip.py
 The URL format is:
 
 ```bash
-protocol://URL#egg=<package_name>&subdirectory=<repo_subdirectory>
+protocol://REPO-URL#egg=<package_name>&subdirectory=<repo_subdirectory>
 ```
 
-For example,
-1. Protocol: `git+ssh`
-1. URL
+For example,let's take
+1. Protocol: `git+https`
+1. URL: `git@github.com:adamatan/github-packages-python.git`. We will replace `:adamatan` with `/adamatan`.
+1. The package name is defined in [`setup.cfg`](./packaging_tutorial/setup.cfg) to be `example-pkg-adamatan`.
+1. The package subdirectory is `packaging_tutorial`.
 
- ![Repo URL](repo-url.png)
+The URL should be wrapped with quotes to escape the `&`. So we get:
 
 ```bash
-pip install "git+ssh://git@github.com/adamatan/github-packages-python.git#subdirectory=packaging_tutorial&egg=example-pkg-adamatan"
+pip install "git+https://git@github.com/adamatan/github-packages-python.git#subdirectory=packaging_tutorial&egg=example-pkg-adamatan"
 ```
+
+## Troubleshooting
+I've tested this with Python 3.9. You can use `make docker` to test the installation on a clean environment.
+
+## How to get the repo URL?
+Hit `Code` above and choose ssh or HTTPS.
+
+![Repo URL](repo-url.png)

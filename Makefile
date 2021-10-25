@@ -18,3 +18,6 @@ venv:
 build: venv
 	source $(VENV_SOURCE_DIR) && python -m build $(PACKAGE_DIR)
 
+# Install the package from github into a Docker container
+docker:
+	docker build -t packaging_tutorial .
